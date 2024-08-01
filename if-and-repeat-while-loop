@@ -1,0 +1,16 @@
+import Foundation
+
+var shrinking = "Bye! July!"
+repeat {
+    print (shrinking)
+    shrinking = String (shrinking.dropLast())
+}
+while shrinking.count > 0
+
+let newDaysInAugust = 31
+var enoughCoffee = 30
+
+print ("Hello August. In August, your code will finally compile on the first try.")
+if enoughCoffee < newDaysInAugust {
+    print ("But only if you sacrifice enough coffee to the debugging gods.")
+}
