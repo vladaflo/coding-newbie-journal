@@ -8,27 +8,14 @@ This repository contains various projects and code snippets that I have worked o
 
 ## Table of Contents
 
-- [Projects](#projects)
 - [Code Examples](#code-examples)
 - [Learning Resources](#learning-resources)
 - [Contact](#contact)
 
-## Projects
-
-### Project 1: Conditional Expression "if" and repeat-while Loop
-
-**Description:** This project demonstrates the usage of the conditional expression "if" and the repeat-while loop in Swift.
-
-**Files:**
-- `if-and-repeat-while-loop`: Contains examples and explanations of the conditional expression "if" and repeat-while loop.
-
-**Commit Message:**
-- **Title:** Using Conditional Expression "if" and repeat-while Loop
-- **Description:** Added new code examples demonstrating the usage of the if conditional expression and the repeat-while loop in Swift. This includes basic syntax and practical examples for better understanding. These additions are part of my learning journey as a newbie programmer.
-
 ## Code Examples
 
-- **if-repeat-while.swift:** Basic syntax, practical examples, and detailed comments on using the if conditional expression and the repeat-while loop in Swift.
+- **if-and-repeat-while-loop:** Basic syntax, practical examples, and detailed comments on using the if conditional expression and the repeat-while loop in Swift.
+- **nil-coalescing-operator:** This code contains an example demonstrating the use of the nil-coalescing operator (??) in Swift, with detailed comments explaining each step.
 
 ## Learning Resources
 
