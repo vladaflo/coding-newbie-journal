@@ -1,0 +1,11 @@
+let defaultLunch = "pizza"
+var specialLunch: String?
+// create an optional String variable
+var myLunch = specialLunch ?? defaultLunch
+// we assign the variable myLunch the value of specialLunch (if it contains a String) or defaultLunch (if it does not)
+print("My lunch on Monday \(myLunch).")
+// when printing the value of myLunch, we see the default value — "pizza," since specialLunch is equal to nil
+specialLunch = "pie with meat"
+// when we assign the value "meat pie" to specialLunch and then use the nil-coalescing operator, the value of specialLunch is unwrapped and transferred to myLunch.
+myLunch = specialLunch ?? defaultLunch
+print("My lunch today - \(myLunch).")
