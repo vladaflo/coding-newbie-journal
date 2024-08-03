@@ -1,0 +1,7 @@
+let mySiblings = ["Jacob", "Michael", "Olivia"]
+if mySiblings.isEmpty {
+    print("I do not have brothers and sisters.")
+} else {
+    print("I have \(mySiblings.count) brothers and sisters.")
+}
+// the if-else statement checks if the array is empty. If it is, a message appears on the screen: "I have no siblings." If the array contains something, a message appears: "I have 3 siblings."
