@@ -1,0 +1,9 @@
+enum Cocktails: String, CaseIterable {
+    case oldfashioned = "Sugar, bitters, and whisky."
+    case manhattan = "Bourbon, sweet vermouth, and bitters."
+    case negroni = "Gin, red vermouth, and Campari."
+    case mojito = "White rum, sugar, lime juice, soda water, and mint."
+}
+for drink in Cocktails .allCases { //The for loop iterates over all cases of the Cocktails enum using Cocktails.allCases. In each iteration, it accesses the rawValue of the current case and prints it.
+    print (drink .rawValue)
+}
