@@ -1,0 +1,19 @@
+enum Genres { // The Genres enum defines four possible genres: scifi, thriller, romcom, and comedy. Each case represents a different genre.
+    case scifi
+    case thriller
+    case romcom
+    case comedy
+}
+var favoritwGenre: Genres = .scifi //The variable favoriteGenre is declared with the type Genres and is assigned the value .scifi. This indicates that the user's favorite genre is science fiction.
+
+switch (favoritwGenre) { //The switch statement is used to perform different actions based on the value of favoriteGenre.
+
+case .comedy:
+    print ("Comedy is fine, as long as it's British.")
+case .romcom:
+    print ("It had better star Hugh Grant.")
+case .thriller:
+    print ("Only Die Hard counts.")
+case .scifi:
+    print ("Star Trek is the best.")
+}
