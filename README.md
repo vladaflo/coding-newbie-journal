@@ -17,7 +17,7 @@ This repository contains various projects and code snippets that I have worked o
 - **if-and-repeat-while-loop:** Basic syntax, practical examples, and detailed comments on using the if conditional expression and the repeat-while loop in Swift.
 - **nil-coalescing-operator:** This code contains an example demonstrating the use of the nil-coalescing operator (??) in Swift, with detailed comments explaining each step.
 - **using-array-properties-swift** An array has properties, which are variables or constants containing some information about it. See how these two properties are used in the following if-else statement.
-
+- **switch with enums** In Swift, enumerations (enums) are a powerful feature that allows you to define a common type for a group of related values.
 ## Learning Resources
 
 Here are some resources that have been helpful in my learning journey:
