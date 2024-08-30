@@ -18,7 +18,9 @@ This repository contains various projects and code snippets that I have worked o
 - **nil-coalescing-operator:** This code contains an example demonstrating the use of the nil-coalescing operator (??) in Swift, with detailed comments explaining each step.
 - **using-array-properties-swift** An array has properties, which are variables or constants containing some information about it. See how these two properties are used in the following if-else statement.
 - **switch with enums** In Swift, enumerations (enums) are a powerful feature that allows you to define a common type for a group of related values.
-- - **enums with raw string values and the CaseIterable protocol** Let's explore the Swift code example that uses an enumeration (enum) with raw string values and the CaseIterable protocol.
+- **enums with raw string values and the CaseIterable protocol** Let's explore the Swift code example that uses an enumeration (enum) with raw string values and the CaseIterable protocol.
+- **sorting an array of integers using a closure** To sort an array of integers in Swift using a closure, you can use the sort(by:) function, which takes a closure as a parameter to define the sorting order.
+
 ## Learning Resources
 
 Here are some resources that have been helpful in my learning journey:
