@@ -1,0 +1,90 @@
+// Autoclosure (автозамыкание) – это замыкание, которое автоматически создается для выражения и откладывает его вычисление до вызова
+func logError (message: @autoclosure () -> String) {
+    print ("Error: \(message())")
+}
+logError(message: "Something went wrong!")
+// message - это автозамыкание, которое откладывает вычесление строки до момента вызова внутри функции logError
+
+// Completion Handler (обработчик завершения) - это замыкание, переданное функции для выполнения после того, как функция завершит свою работу
+func fetchData (comletion: @escaping (String) -> Void) {
+    //симуляция загрузки данных
+    let data = "Data from server"
+    comletion(data)
+}
+fetchData { data in
+print ("Received: \(data)")
+}
+// completion - это замыкание, которое выполняется после получения данных
+
+// Function Type (тип функции) - это тип данных, который описывает замыкание, включая его параметры и возвращаемое значение
+let multiply: (Int, Int) -> Int = { $0 * $1}
+let result = multiply (3, 4)
+print (result) //выведет 12
+// multiply - это переменная типа Int, которая содержит замыкание
+
+// Closure Expression (выражение замыкания) - синтаксис для определения замыкания "на месте", который можно использовать как аргумент или присвоить переменной
+let greeting = { (name: String) in
+print ("Hello, \(name)!")
+}
+greeting("Alice")
+// greeting - замыкание определенное как выражение
+
+// Captured Value (сохраненное значение) - переменная или константа, захваченная замыканием из внешнего контекста
+var counter = 0
+let increment = {
+    counter += 1
+}
+increment()
+increment()
+print (counter) // выведет 2
+// increment захватывает переменную counter и изменяет ее значение
+
+// Escaping Closure (входящее замыкание) - это замыкание, которое передается функции, но вызывается за пределами этой функции (например, после ее завершения)
+func performAsyncTask (completion: @escaping () -> Void) {
+    DispatchQueue.main.async {
+        // симуляция асинхронной задачи
+        completion()
+    }
+}
+performAsyncTask {
+    print ("Task completed!")
+}
+// здесь completion - это входящее замыкание, которое вызывается после завершения асинхронной задачи
+
+// Trailing Closure (завершающее замыкание) - это замыкание, записанное после круглых скобок вызова функции, если оно является последним параметром
+func performOperation (on value: Int, operation: (Int) -> Int) -> Int {
+    return operation(value)
+}
+let results = performOperation(on: 10) { value in
+    return value * 2
+}
+print (results) // выведет 20
+// замыкание { value in return value * 2 } записано как завершающее
+
+// Shorthand Argument Names (сокращенные имена аргументов) - это возможность использования коротких обозначений $0, $1 и т.д. вместо явного указания имен параметров замыкания
+let numbers = [1, 2, 3, 4, 5]
+let doubled = numbers.map { $0 * 2}
+print (doubled) // выведет [2, 4, 6, 8, 10]
+// $0 используется как краткое имя для каждого элемента массива numbers
+
+// Implicit Return (неявный возврат) - это отсутствие ключевого слова return в замыканиях, состоящих из одного выражения
+let isEven = { (number: Int) in number % 2 == 0 }
+print (isEven(4)) //выведет true
+// замыкание автоматически возвращает результат выражения number % 2 == 0
+
+// Closure (замыкание) - автономный блок кода, который может быть передан и использован в программе
+let add = { (a: Int, b: Int) -> Int in
+return a + b
+}
+let sum = add (3,4)
+print (sum) // выведет 7
+// add это замыкание, которое складывает два числа
+
+// Non-Escaping Closure (замыкание без выхода) - это замыкание, которое гарантированно вызывается в пределах функции, в которую оно передано, и не сохраняется за ее пределами
+func executeNow (action: () -> Void) {
+    action()
+}
+executeNow {
+    print ("Executed immediately!")
+}
+// замыкание передается и вызывается сразу внутри функции executeNow
