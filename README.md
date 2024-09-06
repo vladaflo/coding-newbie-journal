@@ -20,6 +20,7 @@ This repository contains various projects and code snippets that I have worked o
 - **switch with enums** In Swift, enumerations (enums) are a powerful feature that allows you to define a common type for a group of related values.
 - **enums with raw string values and the CaseIterable protocol** Let's explore the Swift code example that uses an enumeration (enum) with raw string values and the CaseIterable protocol.
 - **sorting an array of integers using a closure** To sort an array of integers in Swift using a closure, you can use the sort(by:) function, which takes a closure as a parameter to define the sorting order.
+- **terms related to closures** Terms related to closures with examples and commentary in Russian.
 
 ## Learning Resources
 
