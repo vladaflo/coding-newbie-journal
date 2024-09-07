@@ -1,0 +1,12 @@
+var usdToPesos: Double = 19.98
+var usdToReais: Double = 5.58
+var usdToSoles: Double = 3.80
+
+let pesoToUSD: Double = 0.050
+let realToUSD: Double = 0.18
+let solToUSD: Double = 0.27
+
+var total: Double
+
+total = (usdToPesos * pesoToUSD) + (usdToReais * realToUSD) + (usdToSoles * solToUSD)
+print ("Total USD = $ \(total)")
