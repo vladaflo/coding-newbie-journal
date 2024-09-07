@@ -21,8 +21,11 @@ This repository contains various projects and code snippets that I have worked o
 - **enums with raw string values and the CaseIterable protocol** Let's explore the Swift code example that uses an enumeration (enum) with raw string values and the CaseIterable protocol.
 - **sorting an array of integers using a closure** To sort an array of integers in Swift using a closure, you can use the sort(by:) function, which takes a closure as a parameter to define the sorting order.
 - **terms related to closures** Terms related to closures with examples and commentary in Russian.
-- **terms related to closures** Converts the amount of each foreign currency and displays the total amount in USD. This task was completed in the Swift course at the [Codecademy](https://www.codecademy.com/)
+
+This task was completed in the Swift course at the [Codecademy](https://www.codecademy.com/)
+- **terms related to closures** Converts the amount of each foreign currency and displays the total amount in USD.
 - **switch statement** Another type of conditional statement that exists in Swift is the switch statement. The switch statement is a popular programming tool used to check the value of a given expression against multiple cases. The switch statement is a lot more powerful in Swift than it is in other programming languages, thus we’ll be dedicating the next few exercises to explore its features.
+- **switch-statement-interval-matching** The closed range operator signifies an inclusive range where the first and last values are included in the sequence.
 
 Unlike the if statement, a switch statement does not check for the value of a condition and instead finds and matches a case to a given expression.
 
