@@ -21,6 +21,7 @@ This repository contains various projects and code snippets that I have worked o
 - **enums with raw string values and the CaseIterable protocol** Let's explore the Swift code example that uses an enumeration (enum) with raw string values and the CaseIterable protocol.
 - **sorting an array of integers using a closure** To sort an array of integers in Swift using a closure, you can use the sort(by:) function, which takes a closure as a parameter to define the sorting order.
 - **terms related to closures** Terms related to closures with examples and commentary in Russian.
+- **get and set methods used in properties** The get method allows you to read values, while the set method allows you to change them. This helps you control how data is used and modified in your code.
 
 This task was completed in the Swift course at the [Codecademy](https://www.codecademy.com/)
 - **terms related to closures** Converts the amount of each foreign currency and displays the total amount in USD.
