@@ -1,0 +1,15 @@
+struct Temperature {
+    var celsius: Float = 0.0
+    var fahrenheit: Float {
+        get { //get method: This is how you "retrieve" the value of a property. When you want to know what the property holds, the get method is called.
+            return ((celsius * 1.8) + 32.0)
+        }
+        set { //set method: This is how you "set" or change the value of a property. When you want to update this property, the set method is called.
+            self.celsius = ((newValue - 32.0) / 1.8)
+        }
+    }
+}
+var temp = Temperature(celsius: 40)
+print (temp.fahrenheit)
+temp.fahrenheit = 55
+print (temp.celsius)
