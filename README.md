@@ -27,6 +27,7 @@ This task was completed in the Swift course at the [Codecademy](https://www.code
 - **terms related to closures** Converts the amount of each foreign currency and displays the total amount in USD.
 - **switch statement** Another type of conditional statement that exists in Swift is the switch statement. The switch statement is a popular programming tool used to check the value of a given expression against multiple cases. The switch statement is a lot more powerful in Swift than it is in other programming languages, thus we’ll be dedicating the next few exercises to explore its features.
 - **switch-statement-interval-matching** The closed range operator signifies an inclusive range where the first and last values are included in the sequence.
+- **protocols-behave-like-types** Since protocols behave like types, they can be used as types in collections.
 
 Unlike the if statement, a switch statement does not check for the value of a condition and instead finds and matches a case to a given expression.
 
